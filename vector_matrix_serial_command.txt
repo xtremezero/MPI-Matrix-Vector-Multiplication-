@@ -1,0 +1,8 @@
+% Compilation without MPI (regular C++ compilation)
+itc@ubuntu11srv2:~/elmoursy$ g++ vector_matrix_serial.cpp  -o vector_matrix_serial
+
+% Execution
+itc@ubuntu11srv2:~/elmoursy$ ./vector_matrix_serial  > vector_matrix_result.txt
+
+% Compilation with MPI 
+itc@ubuntu11srv2:~/elmoursy$ mpic++  vector_matrix_serial.cpp  -o vector_matrix_serial_mpi
