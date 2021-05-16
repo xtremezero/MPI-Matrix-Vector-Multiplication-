@@ -70,7 +70,7 @@ void RowMatrixVectorMultiply(int dim, double *matrix_data, double *vector_data,d
     MPI_Status status;
     MPI_Comm_rank (MPI_COMM_WORLD, &rank);
     MPI_Comm_size (MPI_COMM_WORLD, &size); 
-    double *localresult = new double[dim/size];    //local result
+    double* localresult = new double[dim / size]{};  //local result
     double matrix [dim][dim];   //local matrix
     double timer=MPI_Wtime();
     MPI_Barrier(MPI_COMM_WORLD);
